@@ -1,0 +1,2 @@
+[02-Mar-2017 16:54:17 UTC] PHP Fatal error:  Out of memory (allocated 1048576) (tried to allocate 12288 bytes) in /home/tashfeen/public_html/01-craftedbyblack/safarkhosh/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php on line 586
+[05-Mar-2017 16:43:19 UTC] PHP Parse error:  syntax error, unexpected 'Route' (T_STRING) in /home/tashfeen/public_html/01-craftedbyblack/safarkhosh/routes/web.php on line 61
