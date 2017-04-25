@@ -272,8 +272,6 @@
   <!-- Angular Application Scripts Load  -->
   <script src="{{ asset('public/angular/app.js') }}"></script>
   <script src="{{ asset('public/angular/controllers/HomeController.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbAfQP7Joorbj3AKKKXJtzhQ2ifkeoypA&callback=initMap"
-    async defer></script>
   
   <script type="text/javascript">
     $(document).ready(function(){

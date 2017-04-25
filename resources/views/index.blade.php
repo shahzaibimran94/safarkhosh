@@ -119,27 +119,27 @@
                           <tr>
                             <td><i class="iconSearch icon-1"></i></td>
                             <td>SECURITY</td>
-                            <td>9.0</td>
+                            <td>@{{tour.security}}</td>
                           </tr>
                           <tr>
                             <td><i class="iconSearch icon-2"></i></td>
                             <td>VALUE</td>
-                            <td>10</td>
+                            <td>@{{tour.value}}</td>
                           </tr>
                           <tr>
                             <td><i class="iconSearch icon-3"></i></td>
                             <td>STAFF</td>
-                            <td>9.0</td>
+                            <td>@{{tour.staff}}</td>
                           </tr>
                           <tr>
                             <td><i class="iconSearch icon-4"></i></td>
                             <td>FACILITIES</td>
-                            <td>10</td>
+                            <td>@{{tour.facilities}}</td>
                           </tr>
                           <tr>
                             <td><i class="iconSearch icon-5"></i></td>
                             <td>FUN</td>
-                            <td>9.0</td>
+                            <td>@{{tour.fun}}</td>
                           </tr>
                           <tr>
                             <td><i class="iconSearch icon-6"></i></td>

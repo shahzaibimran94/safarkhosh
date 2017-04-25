@@ -48,6 +48,7 @@ class QuestionController extends Controller
         $fun = $r->fun;
         $rating = ($security+$value+$staff+$facility+$fun)/5;
         $data = Tour::whereid($r->id)->get(['rating','security','value','staff','facilities','fun'])->first();
+        if($data->rating!=0){
         $newrating = ($rating + $data->rating)/2;
         $newsec = ($security + $data->security)/2;
         $newval = ($value + $data->value)/2;
@@ -63,6 +64,17 @@ class QuestionController extends Controller
         Tour::whereid($r->id)->update($nr);
         $data2 = array('usersRated' => $r->email);
         Rating::create($data2);
+        }else{
+            $sr = array('rating' => $rating,
+                    'security' => $security,
+                    'value' => $value,
+                    'staff' => $staff,
+                    'facilities' => $facility,
+                    'fun' => $fun);
+            Tour::whereid($r->id)->update($sr);
+            $data2 = array('usersRated' => $r->email);
+            Rating::create($data2);
+        }
         $notification = array(
         'message' => 'Thank you For Rating!', 
         'alert-type' => 'success'

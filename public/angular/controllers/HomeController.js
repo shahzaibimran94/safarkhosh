@@ -4,7 +4,7 @@ app.controller('HomeController', function($scope,$http,$window, API_URL,$locatio
     $scope.capacity = 0;
     //fetch data of all tours from Search Controller index function
 	//
-    if($location.absUrl().includes('http://localhost:8080/safarkhoshb/search')){
+    if($location.absUrl().includes('http://localhost/safarkhoshb/search')){
     $http.get(API_URL + "tour")
     .success(function(response){
         $scope.tours = response;
@@ -199,7 +199,7 @@ $scope.filterDate = function(){
     }
 
     $scope.detail = function(id){
-        $window.location.href = "http://localhost:8080/safarkhoshb/trip/"+id;  
+        $window.location.href = "http://localhost/safarkhoshb/trip/"+id;  
     }
     //this function push data from database to the next rows of data already displayed in search page 
     $scope.loadMore = function () {
@@ -375,7 +375,7 @@ $scope.rateTrip = function(){
     
 
     $scope.book = function(id){
-        $window.location.href = "http://localhost:8080/safarkhoshb/book/"+id;
+        $window.location.href = "http://localhost/safarkhoshb/book/"+id;
     };
 
     $scope.questions = function(id){
