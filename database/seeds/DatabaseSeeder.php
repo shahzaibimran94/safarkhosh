@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Safarkhoush admin',
  -            'email' => 'admin@safarkhoush.com',
  -            'username' => 'admin',
- -            'password' => bcrypt('123'),
+ -            'password' => bcrypt('admin'),
  -            'role_id' => '2',
  -            'is_del' => '0',
         ]);
